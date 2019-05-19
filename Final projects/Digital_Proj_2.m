@@ -62,7 +62,7 @@ for i = 1 : 16
 	%Add some noise to generated bits
  	Rx = noise + FSK;
  	%Decide whether the Rx_sequence is ‘1’ or ‘0’
- 	A_ = gt(imag(Rx2),real(Rx2));
+ 	A_ = gt(imag(Rx),real(Rx));
 	%Compare the original bits with the detected bits.
     	B_ = xor(A_,binary_data)
 	%Save the probability of error of each SNR in matrix , BER
