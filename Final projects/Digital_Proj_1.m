@@ -52,5 +52,5 @@ for i = SNR
     [err_,ratio_] = biterr(binary_data,out_);
     %9- Save the probability of error of each SNR in matrix , BER
     BER = [BER ratio];
-    BER_ = [BER_ ratio];
+    BER_ = [BER_ ratio_];
 end
